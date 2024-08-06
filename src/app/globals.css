@@ -2,32 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html {
+    scroll-behavior: smooth;
   }
+
+.bg-top {
+    background-image: url("/pv0622/l10/bg-top-captura.webp");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0B112E;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 1024px) {
+    .bg-top {
+        background-image: url("/pv0622/l10/bg-top-captura-mob.webp");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #0B112E;
+    }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.btn-shadow{
+    box-shadow: 0px 16px 40px -16px rgba(11, 17, 46, 0.48);  
+}
+
+.progress-bar {
+    width: 0;
+    background-color: #FFD52F;
+    border-radius: 9999px;
+    animation: progress 2s ease-in-out forwards;
   }
-}
+  
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+
+  .bg-top-conf {
+    background: #FFD52F;
+  }
+  
+  .after-top-conf {
+    width: 121.125rem;
+    height: 121.125rem;
+  
+    position: absolute;
+    left: -5.4375rem;
+  
+    top: -109.625rem;
+  
+    border-radius: 121.125rem;
+    opacity: 0.24;
+    background: var(--Feedback-Ateno-Warning-Normal, #FFF);
+    filter: blur(332px);
+  }
+
+  .bg-gradient{
+    background: linear-gradient(0deg, rgba(11, 17, 46, 0.06)0%, rgba(11, 17, 46, 0.06)100%), #FFF;
+  }
+
+  .list-square{
+    list-style: square;
+  }
