@@ -4,10 +4,10 @@ import logo from "/public/images/logo.svg";
 import formIcon from "public/folder.svg";
 import arrowUPr from "public/arrow-up-right.svg";
 import Aulas from "./_components/Aulas";
-import Footer from "../Components/Footer";
+import Footer from "../components/Footer";
 import { useEffect, useRef } from "react";
 import Dialog from "./_components/Dialog";
-import TopoConf from "../Components/TopoConf";
+import TopoConf from "../components/TopoConf";
 import DataLayer from "../DataLayer";
 import { Saira_Condensed } from "next/font/google";
 
