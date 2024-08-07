@@ -28,9 +28,9 @@ export default function Confirme() {
       <DataLayer
         type_page="confirme"
         type_content="pico"
-        id_produto="2438760"
+        id_produto="1006882"
         operacao="pico"
-        versao_pico="l2"
+        versao_pico="l10"
       />
       <TopoConf />
       <section className="max-w-[79.5rem] mx-auto">

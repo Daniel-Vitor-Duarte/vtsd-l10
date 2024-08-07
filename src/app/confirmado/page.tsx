@@ -64,9 +64,9 @@ export default function Confirmado() {
       <DataLayer
         type_page="confirmado"
         type_content="pico"
-        id_produto="2438760"
+        id_produto="1006882"
         operacao="pico"
-        versao_pico="l2"
+        versao_pico="l10"
       />
       <TopoConf />
       <section className=" mx-auto overflow-x-hidden bg-gradient">
