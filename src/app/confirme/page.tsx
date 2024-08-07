@@ -78,7 +78,7 @@ export default function Confirme() {
               </p>
             </div>
             <a
-              href="https://joinz.app/curso-copy"
+              href="https://joinz.app/curso-gratuito"
               target="_blank"
               className="w-full lg:mx-0 mx-auto mt-[2rem]"
             >

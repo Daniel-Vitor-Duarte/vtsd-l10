@@ -1,15 +1,18 @@
 import HeadB from "@/app/components/HeadB"
 import Mid from "@/app/components/Mid"
 import Footer from "@/app/components/Footer"
+import { Suspense } from 'react';
 
-function CapturaA() {
+function CapturaB() {
   return (
     <main>
-    <HeadB />
-    <Mid />
-    <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <HeadB />
+        <Mid />
+        <Footer />
+      </Suspense>
     </main>
   )
 }
 
-export default CapturaA
+export default CapturaB

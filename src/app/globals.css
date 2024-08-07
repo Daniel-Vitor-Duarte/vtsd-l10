@@ -6,6 +6,14 @@ html {
     scroll-behavior: smooth;
   }
 
+  button{
+    transition: all .2s ease-in-out;
+  }
+  
+  button:hover{
+    transform: scale(1.05); 
+  }
+
 .bg-top {
     background-image: url("/pv0622/l10/bg-top-captura.webp");
     background-position: center top;
@@ -70,3 +78,5 @@ html {
   .list-square{
     list-style: square;
   }
+
+  

@@ -1,13 +1,16 @@
 import HeadA from "@/app/components/HeadA"
 import Mid from "@/app/components/Mid"
 import Footer from "@/app/components/Footer"
+import { Suspense } from 'react';
 
 function CapturaA() {
   return (
     <main>
-    <HeadA />
-    <Mid />
-    <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <HeadA />
+        <Mid />
+        <Footer />
+      </Suspense>
     </main>
   )
 }

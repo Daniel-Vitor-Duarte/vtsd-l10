@@ -3,6 +3,7 @@ import Calend from "public/calendar.svg"
 import Graphic from "public/graphic.webp"
 import GraphicM from "public/graphic-mob.webp"
 import Leandro from "public/top-captura.png"
+import LeandroM from "public/bg-top-captura-mob.webp"
 import Arrow from "public/arrow-up.svg";
 import Cert from "public/certificado.webp";
 import CertM from "public/certificado-mob.webp";
@@ -24,7 +25,7 @@ function HeadA() {
                 </p>
             </div>
 
-            <section className="bg-[#0B112E] lg:pt-[5.5rem] lg:pb-[5.5rem] pt-12 pb-[29.19rem] overflow-hidden">
+            <section className="bg-[#0B112E] lg:pt-[5.5rem] lg:pb-[5.5rem] pt-12  overflow-hidden">
                 <div className="max-w-[76rem] mx-auto relative">
                     <div className="text-white flex flex-col lg:items-start items-center lg:gap-10 gap-6  lg:text-left text-center z-10 relative">
                         <h1 className={`${SairaCondensed.className} lg:text-[5.13188rem] text-[2.9375rem] font-extrabold lg:-tracking-[0.05131rem] -tracking-[0.02938rem] lg:leading-[3.61506rem] leading-[2.125rem] uppercase `}>
@@ -63,6 +64,7 @@ function HeadA() {
                         </div>
                     </div>
                     <Image className="absolute top-0 -right-40 lg:block hidden" src={Leandro} alt="Leandro"/>
+                    <Image className="lg:hidden mt-4 mx-auto" src={LeandroM} alt="Leandro"/>
                 </div>
             </section>
             
