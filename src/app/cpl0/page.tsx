@@ -31,7 +31,7 @@ function Cpl0() {
                         para aprender 3 coisas:
                     </h1>
                     <h1 className={`${SairaCondensed.className} lg:hidden text-[1.875rem] leading-8 uppercase text-white text-center max-w-[76rem] mx-auto`}>
-                        Assista a aula introdutória  {" "}
+                        Assista a aula introdutória  {" "} <br />
                         <span className="text-[#46CCEE]"> do curso gratuito <br /> &quot;Como entrar no digital&quot;</span> {" "} <br />
                         para aprender 3 coisas:
                     </h1>
@@ -55,7 +55,7 @@ function Cpl0() {
                     </a>
                 </section>
             </section>
-            <div className="lg:mt-[6.94rem] mt-8">
+            <div className="lg:mt-[6.94rem] mt-24">
                 <Footer gray />
             </div>
         </main>

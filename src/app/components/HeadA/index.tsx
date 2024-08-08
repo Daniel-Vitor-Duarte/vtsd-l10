@@ -3,7 +3,7 @@ import Calend from "public/calendar.svg"
 import Graphic from "public/graphic.webp"
 import GraphicM from "public/graphic-mob.webp"
 import Leandro from "public/top-captura.png"
-import LeandroM from "public/bg-top-captura-mob.webp"
+import LeandroM from "public/bg-top-captura-mob.svg"
 import Arrow from "public/arrow-up.svg";
 import Cert from "public/certificado.webp";
 import CertM from "public/certificado-mob.webp";
@@ -64,7 +64,7 @@ function HeadA() {
                         </div>
                     </div>
                     <Image className="absolute top-0 -right-40 lg:block hidden" src={Leandro} alt="Leandro"/>
-                    <Image className="lg:hidden mt-4 mx-auto" src={LeandroM} alt="Leandro"/>
+                    <Image className="lg:hidden mt-4 mx-auto w-full" src={LeandroM} alt="Leandro"/>
                 </div>
             </section>
             

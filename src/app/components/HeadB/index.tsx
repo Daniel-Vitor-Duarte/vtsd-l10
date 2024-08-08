@@ -3,7 +3,7 @@ import Calend from "public/calendar.svg"
 import Graphic from "public/graphic.webp"
 import GraphicM from "public/graphic-mob.webp"
 import Leandro from "public/top-captura.png"
-import LeandroM from "public/bg-top-captura-mob.webp"
+import LeandroM from "public/bg-top-captura-mob.svg"
 import Arrow from "public/arrow-up.svg";
 import Cert from "public/certificado.webp";
 import CertM from "public/certificado-mob.webp";

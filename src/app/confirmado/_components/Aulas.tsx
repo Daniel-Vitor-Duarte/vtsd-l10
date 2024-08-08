@@ -78,7 +78,7 @@ const Aulas = ({ aqueciomento = false }: Props) => {
             </ul>
             {aqueciomento ? (
               <a
-                href="http://vtsd.com.br/ativar-lembrete-aula-01"
+                href="http://vtsd.com.br/ativar-lembrete-curso-digital-aula-01"
                 target="_blank"
               >
                 <button className="mt-[1.75rem] flex items-center text-white font-bold btn-calendar w-full py-3 px-[1.25rem] justify-between bg-[#DC2946] rounded-lg">
@@ -151,7 +151,7 @@ const Aulas = ({ aqueciomento = false }: Props) => {
             </ul>
             {aqueciomento ? (
               <a
-                href="http://vtsd.com.br/ativar-lembrete-aula-01"
+                href="http://vtsd.com.br/ativar-lembrete-curso-digital-aula-02"
                 target="_blank"
               >
                 <button className="mt-[1.75rem] flex items-center text-white font-bold btn-calendar w-full py-3 px-[1.25rem] justify-between bg-[#DC2946] rounded-lg">
@@ -225,7 +225,7 @@ const Aulas = ({ aqueciomento = false }: Props) => {
             </ul>
             {aqueciomento ? (
               <a
-                href="http://vtsd.com.br/ativar-lembrete-aula-01"
+                href="http://vtsd.com.br/ativar-lembrete-curso-digital-aula-03"
                 target="_blank"
               >
                 <button className="mt-[1.75rem] flex items-center text-white font-bold btn-calendar w-full py-3 px-[1.25rem] justify-between bg-[#DC2946] rounded-lg">

@@ -125,7 +125,7 @@ export default function Confirmado() {
       >
         <iframe
           className="w-full h-full"
-          src="https://1ku7oxcfm1h.typeform.com/to/U2NopUlx#conversion=pico-lc-l2-julho-24"
+          src="http://vtsd.com.br/responder-pesquisa-lp-curso"
         ></iframe>
       </Dialog>
     </main>
