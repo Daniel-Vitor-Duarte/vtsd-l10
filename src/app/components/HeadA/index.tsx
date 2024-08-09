@@ -68,30 +68,32 @@ function HeadA() {
                 </div>
             </section>
             
-            <section className="bg-[#FFD52F] flex lg:flex-row flex-col justify-end items-center lg:pt-0 pt-12 lg:text-left text-center">
-                <div className="lg:max-w-[33.5rem] max-w-[20.5rem] text-[#000000a3]  font-semibold">
-                    <h1 className={`${SairaCondensed.className} lg:text-[3rem] text-[1.875rem] text-[#0B112E] font-extrabold uppercase lg:leading-[3.25rem] leading-[2.25rem] lg:-tracking-[.03rem] -tracking-[.01875rem]`}>
-                        Um curso intensivo para você aprender a entrar <br />
-                        no Marketing Digital
-                    </h1>
-                    <p className="mt-5 lg:text-[1.375rem] text-[1.25rem] lg:leading-[2rem] leading-[1.625rem]">
-                        E levar um certificado reconhecido pelo mercado
-                    </p>
-                    <p className="mt-6 lg:text-[1.375rem] text-[1rem] lg:leading-[2rem] leading-[1.5rem]">
-                        Para garantir que vai receber o seu, <br />
-                        se cadastre clicando abaixo:
-                    </p>
-                    <a href="#FormA">
-                        <button className="flex items-center gap-4 lg:py-3 py-2 lg:px-5 px-4 text-[#0B112E] lg:text-[1.125rem] leading-7 bg-white rounded-lg btn-shadow mt-6 font-bold w-fit lg:mx-0 mx-auto">
-                            <p>
-                                Quero participar agora
-                            </p>
-                            <Image className="lg:w-auto w-[1.125rem]" src={Arrow} alt="seta" />
-                        </button>
-                    </a>
+            <section className="bg-[#FFD52F]  lg:text-left text-center lg:px-4 overflow-x-hidden">
+                <div className="relative flex lg:flex-row flex-col justify-start items-center lg:pt-[6rem] lg:pb-[6.1rem] pt-12 lg:max-w-[90rem] mx-auto">
+                    <div className="lg:max-w-[33.5rem] max-w-[20.5rem] text-[#000000a3] text-w font-semibold relative z-10 ">
+                        <h1 className={`${SairaCondensed.className} lg:text-[3rem] text-[1.875rem] text-[#0B112E] font-extrabold uppercase lg:leading-[3.25rem] leading-[2.25rem] lg:-tracking-[.03rem] -tracking-[.01875rem]`}>
+                            Um curso intensivo para você aprender a entrar <br />
+                            no Marketing Digital
+                        </h1>
+                        <p className="mt-5 lg:text-[1.375rem] text-[1.25rem] lg:leading-[2rem] leading-[1.625rem]">
+                            E levar um certificado reconhecido pelo mercado
+                        </p>
+                        <p className="mt-6 lg:text-[1.375rem] text-[1rem] lg:leading-[2rem] leading-[1.5rem]">
+                            Para garantir que vai receber o seu, <br />
+                            se cadastre clicando abaixo:
+                        </p>
+                        <a href="#FormA">
+                            <button className="flex items-center gap-4 lg:py-3 py-2 lg:px-5 px-4 text-[#0B112E] lg:text-[1.125rem] leading-7 bg-white rounded-lg btn-shadow mt-6 font-bold w-fit lg:mx-0 mx-auto">
+                                <p>
+                                    Quero participar agora
+                                </p>
+                                <Image className="lg:w-auto w-[1.125rem]" src={Arrow} alt="seta" />
+                            </button>
+                        </a>
+                    </div>
+                    <Image className="lg:block hidden absolute right-0 bottom-0 blur-medium" src={Cert} alt="certificado" />
+                    <Image className="lg:hidden max-w-full" src={CertM} alt="certificado" />
                 </div>
-                <Image className="lg:block hidden" src={Cert} alt="certificado" />
-                <Image className="lg:hidden" src={CertM} alt="certificado" />
             </section>
 
         </main>
