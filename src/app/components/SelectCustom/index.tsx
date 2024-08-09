@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Countries from "@/app/paises.json";
 import Image from "next/image";
-import ArrowDown from "public/arrow-right.svg";
+import ArrowDown from "public/chevron-down.svg";
 
 interface Props {
   handleDdi: (ddi: any) => void;
@@ -52,7 +52,7 @@ function SelectCustom({ handleDdi }: Props) {
   return (
     <div className="relative w-[8rem] " ref={customSelect}>
       <div
-        className="border-[1.5px] border-[#E0E0E0] text-black placeholder:text-black w-[8rem]  h-full  text-sm rounded-lg block p-4 relative"
+        className="border-[1.5px] border-[#E0E0E0] text-black placeholder:text-black w-[8rem] bg-white h-full  text-sm rounded-lg block p-4 relative"
         onClick={() => setToggleSelect(!toggleSelect)}
       >
         <div className="flex justify-between items-center">

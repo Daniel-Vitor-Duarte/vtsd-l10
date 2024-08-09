@@ -30,7 +30,7 @@ const CallToAction: React.FC = () => {
         email: "",
         phonenumber: "",
         whatsapp: "",
-        ddi: "+55",
+        ddi: "55",
     });
 
     const handleDdi = (ddi: any) => {
@@ -41,13 +41,16 @@ const CallToAction: React.FC = () => {
     };
 
     const phoneMask = (value: any) => {
+        const ddiString = String(form.ddi)
         if (!value) return "";
-
+        if (ddiString !== "55") {
+          return value;
+        }
         value = value.replace(/\D/g, "");
         value = value.replace(/(\d{2})(\d)/, "($1) $2");
         value = value.replace(/(\d)(\d{4})$/, "$1-$2");
         return value;
-    };
+      };
 
     const handlePhone = (whatsapp: any) => {
         let input = whatsapp.target;
@@ -152,31 +155,29 @@ const CallToAction: React.FC = () => {
             <input
                 type="text"
                 name="fullname"
-                className="lg:py-4 lg:px-4 py-2 px-3 border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-bold focus:outline-none w-full"
-                placeholder="Digite seu nome e sobrenome..."
+                className="lg:py-4 lg:px-4 py-2 px-3 border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-normal focus:outline-none w-full"
+                placeholder="Digite seu nome e sobrenome"
                 required
             />
-            <div className="flex lg:flex-row flex-col justify-between gap-2 mt-2">
                 <input
                     type="email"
                     name="email"
-                    className="lg:py-4 lg:px-4 py-2 px-3 border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-bold focus:outline-none w-auto "
-                    placeholder="Digite seu melhor e-mail..."
+                    className="lg:py-4 lg:px-4 py-2 px-3 border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-normal focus:outline-none w-full mt-2"
+                    placeholder="Digite seu melhor e-mail"
                     required
                 />
-                <div className="flex gap-[1rem] ">
-                    {/* <SelectCustom handleDdi={handleDdi} /> */}
+                <div className="flex gap-2 mt-2">
+                    <SelectCustom handleDdi={handleDdi} />
                     <input
                         maxLength={15}
                         type={"tel"}
                         onChange={(e) => handlePhone(e)}
-                        className="lg:py-4 lg:px-4 py-2 px-3  border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-bold focus:outline-none w-full"
-                        placeholder="Digite seu telefone..."
+                        className="lg:py-4 lg:px-4 py-2 px-3  border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-normal focus:outline-none w-full "
+                        placeholder="Digite seu telefone"
                         required
                     />
                     <input type="hidden" value={telReady} name="phone" />
                 </div>
-            </div>
             <button
                 className={
                     "shadow-[0px_16px_40px_-16px_rgba(54,50,157,0.56)] rounded-lg flex items-center justify-between lg:gap-2 gap-[.44rem] w-full bg-[#FFD52F] mt-[.5rem] lg:py-4 py-2 lg:px-5 px-3 text-[#0B112E] font-bold lg:text-[1.125rem] leading-[1.75rem]"
