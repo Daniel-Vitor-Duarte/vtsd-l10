@@ -43,7 +43,7 @@ function HeadA() {
                                 9, 11 e 13 de Setembro,<br className="lg:hidden" /> às 19h,  ao vivo
                             </p>
                         </div>
-                        <div className="lg:max-w-full max-w-[20.5rem]" id="FormA">
+                        <div className="lg:max-w-full max-w-[20.5rem]" id="A">
                             <p className="lg:text-[1.125rem] text-[1rem] text-[#ffffffa3] font-semibold">
                                 Deixe seu e-mail abaixo e acesse o curso e o certificado:
                             </p>
@@ -82,7 +82,7 @@ function HeadA() {
                             Para garantir que vai receber o seu, <br />
                             se cadastre clicando abaixo:
                         </p>
-                        <a href="#FormA">
+                        <a href="#A">
                             <button className="flex items-center gap-4 lg:py-3 py-2 lg:px-5 px-4 text-[#0B112E] lg:text-[1.125rem] leading-7 bg-white rounded-lg btn-shadow mt-6 font-bold w-fit lg:mx-0 mx-auto">
                                 <p>
                                     Quero participar agora
