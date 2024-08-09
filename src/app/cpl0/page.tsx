@@ -21,7 +21,7 @@ function Cpl0() {
                 type_content="pico"
                 id_produto="1006882"
                 operacao="pico"
-                versao_pico="l10"
+                versao_pico="L10"
             />
             <section>
                 <section className='bg-[#0B112E] lg:pt-[4rem] pt-12 lg:pb-[25.19rem]'>

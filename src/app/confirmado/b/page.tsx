@@ -66,7 +66,7 @@ export default function Confirmado() {
                 type_content="pico"
                 id_produto="1006882"
                 operacao="pico"
-                versao_pico="l10"
+                versao_pico="L10"
             />
             <TopoConf />
             <section className=" mx-auto overflow-x-hidden bg-gradient">

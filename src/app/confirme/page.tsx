@@ -30,7 +30,7 @@ export default function Confirme() {
         type_content="pico"
         id_produto="1006882"
         operacao="pico"
-        versao_pico="l10"
+        versao_pico="L10"
       />
       <TopoConf />
       <section className="max-w-[79.5rem] mx-auto">
