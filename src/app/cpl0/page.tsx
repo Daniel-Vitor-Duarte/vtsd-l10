@@ -5,6 +5,8 @@ import Folder from "public/folder.svg"
 import Download from "public/download.svg"
 import Footer from "../components/Footer";
 import DataLayer from "../DataLayer";
+import calendar from "public/GoogleCalendar.svg";
+import arrowUPrW from "public/arrow-up-right-white.svg";
 
 const SairaCondensed = Saira_Condensed({
     weight: ['800'],
@@ -39,11 +41,11 @@ function Cpl0() {
                         <YouTubeEmbed />
                     </div>
                 </section>
-                <section>
+                <section className="flex lg:flex-row flex-col justify-center gap-4 lg:mt-[23.56rem] xlg:mt-[26.5rem] mt-8">
                     <a href="https://vendatodosantodia.com.br/raiox-digital-pico.pdf" target="_blank">
                         <button
                             className={
-                                "shadow-[0px_16px_40px_-16px_rgba(249,199,0,0.3)] rounded-lg flex items-center justify-center lg:gap-6 gap-[.5rem] w-fit bg-[#FFD52F] lg:mt-[23.56rem] mt-8 lg:py-4 py-[.6rem] lg:px-5 px-3 text-[#0B112E] font-bold lg:text-[1.125rem] leading-[1.75rem] mx-auto"
+                                "shadow-[0px_16px_40px_-16px_rgba(249,199,0,0.3)] rounded-lg flex items-center justify-center lg:gap-6 gap-[.5rem] w-fit bg-[#FFD52F]  lg:py-4 py-[.6rem] lg:px-5 px-3 text-[#0B112E] font-bold lg:text-[1.125rem] leading-[1.75rem] mx-auto"
                             }
                         >
                             <div className="flex gap-2">
@@ -51,6 +53,20 @@ function Cpl0() {
                                 <p>Clique aqui para baixar o relatório</p>
                             </div>
                             <Image className="lg:w-auto w-5" src={Download} alt="ArrowRight" />
+                        </button>
+                    </a>
+
+                    <a href="https://vendatodosantodia.com.br/raiox-digital-pico.pdf" target="_blank">
+                        <button
+                            className={
+                                "shadow-[0px_16px_40px_-16px_rgba(249,199,0,0.3)] rounded-lg flex items-center justify-center lg:gap-6 gap-[.5rem] w-fit bg-[#0B112E]  lg:py-4 py-[.6rem] lg:px-5 px-3 text-white font-bold lg:text-[1.125rem] leading-[1.75rem] mx-auto"
+                            }
+                        >
+                            <div className="flex gap-2">
+                                <Image className="lg:w-auto w-[1rem]" src={calendar} alt="pasta" />
+                                <p>Ativar o lembrete no Google Calendar</p>
+                            </div>
+                            <Image className="lg:w-auto w-5" src={arrowUPrW} alt="ArrowRight" />
                         </button>
                     </a>
                 </section>
