@@ -30,7 +30,7 @@ const CallToAction: React.FC = () => {
         email: "",
         phonenumber: "",
         whatsapp: "",
-        ddi: "+55",
+        ddi: "55",
     });
 
     const handleDdi = (ddi: any) => {
@@ -41,8 +41,11 @@ const CallToAction: React.FC = () => {
     };
 
     const phoneMask = (value: any) => {
+        const ddiString = String(form.ddi)
         if (!value) return "";
-
+        if (ddiString !== "55") {
+            return value;
+        }
         value = value.replace(/\D/g, "");
         value = value.replace(/(\d{2})(\d)/, "($1) $2");
         value = value.replace(/(\d)(\d{4})$/, "$1-$2");
@@ -153,30 +156,28 @@ const CallToAction: React.FC = () => {
             <input
                 type="text"
                 name="fullname"
-                className="lg:py-4 lg:px-4 py-2 px-3 border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-bold focus:outline-none w-full"
-                placeholder="Digite seu nome e sobrenome..."
+                className="lg:py-4 lg:px-4 py-2 px-3 border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-normal focus:outline-none w-full lg:leading-normal leading-8"
+                placeholder="Digite seu nome e sobrenome"
                 required
             />
-            <div className="flex lg:flex-row flex-col justify-between gap-2 mt-2">
+            <input
+                type="email"
+                name="email"
+                className="lg:py-4 lg:px-4 py-2 px-3 border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-normal focus:outline-none w-full mt-2 lg:leading-normal leading-8"
+                placeholder="Digite seu melhor e-mail"
+                required
+            />
+            <div className="flex gap-2 mt-2">
+                <SelectCustom handleDdi={handleDdi} />
                 <input
-                    type="email"
-                    name="email"
-                    className="lg:py-4 lg:px-4 py-2 px-3 border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-bold focus:outline-none w-auto "
-                    placeholder="Digite seu melhor e-mail..."
+                    maxLength={15}
+                    type={"tel"}
+                    onChange={(e) => handlePhone(e)}
+                    className="lg:py-4 lg:px-4 py-2 px-3  border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-normal focus:outline-none w-full lg:leading-normal leading-8"
+                    placeholder="Digite seu telefone"
                     required
                 />
-                <div className="flex gap-[1rem] ">
-                    {/* <SelectCustom handleDdi={handleDdi} /> */}
-                    <input
-                        maxLength={15}
-                        type={"tel"}
-                        onChange={(e) => handlePhone(e)}
-                        className="lg:py-4 lg:px-4 py-2 px-3  border-[1.5px] border-[#E0E0E0] rounded-lg placeholder:font-bold focus:outline-none w-full"
-                        placeholder="Digite seu telefone..."
-                        required
-                    />
-                    <input type="hidden" value={telReady} name="phone" />
-                </div>
+                <input type="hidden" value={telReady} name="phone" />
             </div>
             <button
                 className={
