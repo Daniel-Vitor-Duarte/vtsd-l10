@@ -56,7 +56,7 @@ function Cpl0() {
                         </button>
                     </a>
 
-                    <a href="https://vendatodosantodia.com.br/raiox-digital-pico.pdf" target="_blank">
+                    <a href="http://vtsd.com.br/ativar-lembrete-cpl0-aula1" target="_blank">
                         <button
                             className={
                                 "shadow-[0px_16px_40px_-16px_rgba(249,199,0,0.3)] rounded-lg flex items-center justify-center lg:gap-6 gap-[.5rem] w-fit bg-[#0B112E]  lg:py-4 py-[.6rem] lg:px-5 px-3 text-white font-bold lg:text-[1.125rem] leading-[1.75rem] mx-auto"
