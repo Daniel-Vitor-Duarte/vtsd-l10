@@ -185,7 +185,7 @@ const CallToAction: React.FC = () => {
             >
                 <div className="flex gap-2">
                     <Image className="lg:block hidden" src={Folder} alt="pasta" />
-                    <p>Reservar meu lugar e baixar o relatório</p>
+                    <p>Reserve meu lugar e baixar o relatório</p>
                 </div>
                 <Image className="lg:block hidden" src={ArrowRight} alt="ArrowRight" />
             </button>

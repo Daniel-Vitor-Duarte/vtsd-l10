@@ -87,7 +87,7 @@ export default function Confirme() {
                   <Image src={zap} alt="zap" />{" "}
                   <span className="lg:hidden">Entrar no grupo</span>
                   <span className="lg:block hidden">
-                  Reservar meu lugar e baixar o relatório
+                  Reserve meu lugar e baixar o relatório
                   </span>
                 </div>
                 <Image src={arrowRight} alt="arrowRight" />

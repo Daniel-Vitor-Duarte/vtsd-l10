@@ -80,12 +80,11 @@ export default function Confirmado() {
               inscrição <br className="lg:hidden" />{" "}
               <span className="text-[#46CCEE] lg:text-[5.5rem] text-[3.25rem]  lg:-tracking-[0.055rem] -tracking-[0.0325rem] ">confirmada!</span>
             </h1>
-            <p className={`${SairaCondensed.className} lg:text-[2.375rem] text-[1.625rem] lg:leading-9 leading-7 text-white lg:mt-10 mt-4 uppercase lg:max-w-full max-w-[11.875rem]`}>
+            <p className={`${SairaCondensed.className} text-[#FFD52F] lg:text-[2.375rem] text-[1.625rem] lg:leading-9 leading-7  lg:mt-10 mt-4 uppercase lg:max-w-full max-w-[11.875rem]`}>
               Você pode ganhar um presente:
             </p>
-            <p className="text-[#E0E0E0] mt-6 lg:text-[1.375rem] font-medium lg:max-w-[30.4375rem] max-w-[21.375rem] lg:leading-8 leading-[1.5625rem]">
-              Um relatório com os tipos de produtos digitais
-              que estão dando muito dinheiro
+            <p className="text-[#E0E0E0] mt-6 lg:text-[1.375rem] font-medium lg:max-w-[32.4375rem] max-w-[21.375rem] lg:leading-8 leading-[1.5625rem]">
+              Um relatório <span className="text-[#FFD52F] font-bold">completo</span> com os tipos de produtos digitais que estão dando muito dinheiro.
             </p>
             <p className="text-[#E0E0E0] lg:mt-[2rem] mt-[1.12rem] lg:max-w-full max-w-[19.375rem]">
               Para desbloquear o presente, responda a pesquisa abaixo:
