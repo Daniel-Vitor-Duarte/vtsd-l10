@@ -9,7 +9,7 @@ import PlayM from 'public/play-top-mob.webp';
 
 function YouTubeEmbed() {
   const [showFrame, setShowFrame] = useState(false);
- 
+
   // const [isClient, setIsClient] = useState(false);
   //   useEffect(() => {
   //       setIsClient(true);
@@ -64,7 +64,7 @@ function YouTubeEmbed() {
             width="100%"
             height="192.34"
             className="lg:h-[687.39px] mm:h-[560px] lg:rounded-2xl rounded-lg"
-            src={`https://www.youtube.com/embed/EdrQPJZ77vY?autoplay=1`}
+            src={`https://www.youtube.com/embed/irZxhu7gycc?autoplay=1`}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
