@@ -1,3 +1,7 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 import { Saira_Condensed } from "next/font/google";
 import Image from "next/image";
 import arrowRight from "public/arrow-right-white.svg";
@@ -13,6 +17,16 @@ const SairaCondensed = Saira_Condensed({
 
 
 function Cpl0() {
+    const router = useRouter();
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            router.push('http://vtsd.com.br/grupo-l10');
+        }, 3000); 
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         // h-screen flex flex-col justify-between
         <main>
