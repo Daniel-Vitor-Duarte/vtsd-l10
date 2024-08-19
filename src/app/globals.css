@@ -229,7 +229,21 @@ button:hover {
   .blur-medium {
     margin-right: -10rem;
   }
-  .text-w{
+
+  .text-w {
     width: 28rem;
   }
+}
+
+
+.blur-grupo {
+  width: 121.125rem;
+  height: 121.125rem;
+  position: absolute;
+  left: -10.5625rem;
+  top: -106.375rem;
+  border-radius: 121.125rem;
+  opacity: 0.24;
+  background: #46CCEE;
+  filter: blur(332px);
 }
