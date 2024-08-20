@@ -29,15 +29,17 @@ function Cpl0() {
             />
             <section>
                 <section className='bg-[#0B112E] lg:pt-[4rem] pt-12 lg:pb-[28.19rem]'>
-                    <h1 className={`${SairaCondensed.className} lg:block hidden text-[3rem] leading-[3.25rem] -tracking-[0.03rem] uppercase text-white text-center max-w-[76rem] mx-auto`}>
-                        3 exercícios para se preparar para o {" "} <br />
-                        <span className="text-[#46CCEE]">  curso gratuito &quot;Como entrar no digital&quot;:</span>
+                    <h1 className={`${SairaCondensed.className} lg:block hidden text-[3rem] leading-[3.25rem] -tracking-[0.03rem] uppercase text-white text-center max-w-[46rem] mx-auto`}>
+                        Assista o vídeo para entender através
+                        de exercícios práticos  {" "} <br />
+                        <span className="text-[#46CCEE]">  como poupar tempo e dinheiro:</span>
                     </h1>
-                    <h1 className={`${SairaCondensed.className} lg:hidden text-[1.875rem] leading-8 uppercase text-white text-center max-w-[76rem] mx-auto`}>
-                        3 exercícios para <br /> se preparar para o {" "} <br />
-                        <span className="text-[#46CCEE]"> curso gratuito <br /> &quot;Como entrar no digital&quot;:</span>
+                    <h1 className={`${SairaCondensed.className} lg:hidden text-[1.875rem] leading-8 uppercase text-white text-center max-w-[22.375rem] mx-auto`}>
+                        Assista o vídeo para entender através
+                        de exercícios práticos como {" "} <br />
+                        <span className="text-[#46CCEE]"> poupar tempo e dinheiro:</span>
                     </h1>
-                    <div className="lg:absolute lg:mt-0 top-[20%] w-full">
+                    <div className="lg:absolute lg:mt-0 top-[27%] w-full">
                         <YouTubeEmbed />
                     </div>
                 </section>
