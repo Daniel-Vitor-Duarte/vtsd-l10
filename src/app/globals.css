@@ -247,3 +247,7 @@ button:hover {
   background: #46CCEE;
   filter: blur(332px);
 }
+
+.bg-gradient-cpl0{
+  background: linear-gradient(0deg, rgba(11, 17, 46, 0.06) 0%, rgba(11, 17, 46, 0.06) 100%), #FFF;
+}
