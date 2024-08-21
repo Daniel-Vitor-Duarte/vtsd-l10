@@ -251,3 +251,12 @@ button:hover {
 .bg-gradient-cpl0{
   background: linear-gradient(0deg, rgba(11, 17, 46, 0.06) 0%, rgba(11, 17, 46, 0.06) 100%), #FFF;
 }
+
+.bg-top-conf {
+  background: linear-gradient(90deg, #ffc42e 0%, #fed469 100%);
+}
+
+.bg-cronograma{
+  background: linear-gradient(0deg, rgba(11, 17, 46, 0.06) 0%, rgba(11, 17, 46, 0.06) 100%), #FFF;
+box-shadow: 0px 4px 48px 0px rgba(0, 189, 167, 0.08);
+}
