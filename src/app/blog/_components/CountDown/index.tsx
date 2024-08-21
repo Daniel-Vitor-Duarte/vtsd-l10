@@ -2,7 +2,7 @@
 import React from "react";
 import Countdown from "react-countdown";
 
-const eventDate = new Date("2024-07-10T19:00:00-03:00");
+const eventDate = new Date("2024-09-09T19:00:00-03:00");
 function CountDown() {
   const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
     if (completed) {
@@ -36,7 +36,7 @@ function CountDown() {
               })}
             </p>
           </div>
-          <div className="h-[2.5625rem] w-[0.125rem] bg-[#AC872B]"></div>
+          <div className="h-[2.5625rem] w-[0.125rem] bg-[#0000001f]"></div>
           <div className="flex flex-col items-center">
             <p className="text-[0.625rem] uppercase font-bold">Horas</p>
             <p className="font-bold text-[1.81469rem] leading-[1.9035rem] -tracking-[0.1rem]">
@@ -46,7 +46,7 @@ function CountDown() {
               })}
             </p>
           </div>
-          <div className="h-[2.5625rem] w-[0.125rem] bg-[#AC872B]"></div>
+          <div className="h-[2.5625rem] w-[0.125rem] bg-[#0000001f]"></div>
           <div className="flex flex-col items-center">
             <p className="text-[0.625rem] uppercase font-bold">Min.</p>
             <p className="font-bold text-[1.81469rem] leading-[1.9035rem] -tracking-[0.1rem]">

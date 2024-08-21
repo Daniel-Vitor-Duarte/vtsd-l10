@@ -61,11 +61,11 @@ function CardAulas({
         />
       </div>
       <div className="w-full bg-[#fff] rounded-r-[0.5rem] lg:px-4 px-[0.5rem] py-[1rem]">
-        <p className="text-[0.625rem] text-[rgba(0,0,0,0.56)]">{name}</p>
+        <p className="text-[0.625rem] text-[rgba(0,0,0,0.56)] font-bold">{name}</p>
         <p className="lg:text-[0.875rem] text-[0.70rem] text-[#0B112E] font-bold lg:leading-[1.5rem] lg:mt-0 mt-1">
           {title}
         </p>
-        <p className="text-[0.75rem] text-[rgba(0,0,0,0.56)] font-bold flex items-center lg:mt-[0.5rem] mt-[0.2rem] gap-[0.5rem]">
+        <p className="text-[0.75rem] text-[rgba(0,0,0,0.56)] font-bold flex items-center lg:mt-[0.13rem] mt-[0.2rem] gap-[0.5rem]">
           {/* <Image src={calendar} alt="calendar" className="w-[0.75rem]" /> */}
           {date}
         </p>

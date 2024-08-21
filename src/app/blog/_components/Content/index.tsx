@@ -9,18 +9,23 @@ import CardAulas from "../CardAulas";
 import iconlook from "public/lock.svg";
 import icondownload from "public/download.svg";
 import Image from "next/image";
-import zap from "/public/whatsappBtn.svg";
-import arrowRight from "public/arrow-right.svg";
+import zap from "/public/whatsappBtn-black.svg";
+import arrowRight from "public/arrow-up-right.svg";
 import Comments from "../Comments";
 import Footer from "@/app/components/Footer";
 import isBlockImage from "public/isBlock.svg";
 import CountDown from "../CountDown";
 import { Saira_Condensed } from "next/font/google";
-
+import { Roboto } from "next/font/google";
 
 const SairaCondensed = Saira_Condensed({
-    weight: ['800'],
-    subsets: ["latin"]
+  weight: ['800'],
+  subsets: ["latin"]
+});
+
+const roboto = Roboto({
+  weight: ['700', '900'],
+  subsets: ["latin"]
 });
 
 interface Props {
@@ -50,33 +55,36 @@ function Content({ activeAula }: Props) {
       {
         name: "AULA 01",
         title: "As oportunidades escondidas...",
+        secTitle: "As oportunidades escondida no digital",
         date: "09/09 às 19h",
         srcImage: Thumb1,
-        embedYoutube: "3_yRACSyy04",
+        embedYoutube: "7eIcpj8UTBY",
         dia: 9,
-        isBlock: false,
+        isBlock: true,
         linkMaterial: "https://vendatodosantodia.com.br/material-lc-aula1.pdf",
         linkRedirect: "cpl01",
       },
       {
         name: "AULA 02",
         title: "Criando seu produto digital...",
+        secTitle: "Criando Seu Produto Digital do Zero",
         date: "11/09 às 19h",
         srcImage: Thumb2,
-        embedYoutube: "qywFoUMn_4U",
+        embedYoutube: "YLKwZzxHUTQ",
         dia: 11,
-        isBlock: false,
+        isBlock: true,
         linkMaterial: "https://vendatodosantodia.com.br/material-lc-aula2.pdf",
         linkRedirect: "cpl02",
       },
       {
         name: "AULA 03",
         title: "Eliminando obstáculos",
+        secTitle: "Eliminando obstáculos",
         date: "13/09 às 19h",
         srcImage: Thumb3,
-        embedYoutube: "F1jfSJViHh8",
+        embedYoutube: "Ju6iN59Q5pg",
         dia: 13,
-        isBlock: false,
+        isBlock: true,
         linkMaterial: "https://vendatodosantodia.com.br/material-lc-aula3.pdf",
         linkRedirect: "cpl03",
       },
@@ -98,16 +106,17 @@ function Content({ activeAula }: Props) {
   }
 
   return (
-    <div className=" bg-[#0B112E]">
+    <div className=" bg-[#0B112E] relative overflow-x-hidden">
+      <div className="glow-top-blog "></div>
       <div className="bg-[#FFD52F] relative">
-        <div className="py-[1.25rem] lg:text-[1.125rem] text-[0.875rem] font-extrabold text-[#2A2A2A] uppercase">
-          <p className="text-center ">
-            curso gratuito: como entrar no digital + <br className="lg:hidden" />{" "}
-            CERTIFICADO de participação ao final do curso
+        <div className="py-[1.25rem] lg:text-[1.125rem] font-extrabold text-[#2A2A2A] uppercase lg:max-w-full max-w-[22.175rem] mx-auto">
+          <p className={`${roboto.className} text-center font-black`}>
+            curso gratuito: como entrar no digital  +
+            CERTIFICADO de participação <br className="lg:hidden" /> ao final do curso
           </p>
         </div>
       </div>
-      <div className="max-w-[76rem] w-full mx-auto flex lg:flex-row flex-col items-start lg:mt-[4rem] ">
+      <div className="max-w-[76rem] w-full mx-auto flex lg:flex-row flex-col items-start lg:mt-[4rem] relative">
         <div>
           {aulas[activeAula].isBlock ? (
             <div className="lg:w-[48rem] lg:h-[27rem] relative flex justify-center items-center">
@@ -134,15 +143,15 @@ function Content({ activeAula }: Props) {
               allowFullScreen
             ></iframe>
           )}
-          <div className="lg:mt-[3rem] mt-[2rem] lg:px-0 px-4">
-            <p className="text-[0.625rem] text-[#FEE296]">
+          <div className="lg:pt-[3rem] pt-[2rem] lg:px-0 px-4 lg:border-none border-t-2 border-[rgba(255,255,255,0.32)]">
+            <p className="text-[0.75rem] text-[#46CCEE]">
               {aulas[activeAula].name}
             </p>
-            <p className="text-[#FEE296] mt-[0.5rem] lg:text-[1.125rem] text-[1rem] font-semibold flex gap-[0.5rem] lg:items-center">
+            <p className="text-[#46CCEE] mt-0 lg:text-[1.125rem] text-[1rem] font-semibold flex gap-[0.5rem] lg:items-center">
               <span className="flex gap-[0.5rem] items-center">
                 {" "}
                 Liberada{" "}
-                {aulas[activeAula].dia !== 12 ? (
+                {aulas[activeAula].dia !== 9 ? (
                   <></>
                 ) : (
                   <div className="flex gap-[0.5rem] items-center">
@@ -153,22 +162,22 @@ function Content({ activeAula }: Props) {
               </span>
             </p>
             <p className="text-[#fff] mt-[1.6rem] lg:text-[2rem] text-[1.5rem] font-bold">
-              <span> {aulas[activeAula].title}</span>
+              <span> {aulas[activeAula].secTitle}</span>
             </p>
             <p className="text-[#E0E0E0] mt-[1.5rem] font-medium flex gap-[0.5rem] items-center lg:text-base text-[0.875rem]">
               Entre no grupo de whatsapp e receba todas as informações do evento
             </p>
-            <div className="flex lg:flex-row flex-col mt-[1.5rem] gap-[2rem]">
-              <div className="lg:max-w-[23.375rem] w-full">
+            <div className="flex lg:flex-row flex-col lg:justify-start mt-[1.5rem] lg:gap-[2rem] gap-4">
+              <div className="lg:max-w-[23.375rem] lg:w-fit w-full">
                 <a
                   href="https://joinz.app/curso-copy"
                   target="_blank"
                   className=" w-full lg:mx-0 mx-auto mt-[2rem]"
                 >
-                  <button className="flex bg-[#25D366] shadow-[0px_16px_40px_-16px_rgba(0,155,75,0.56)] w-full h-[3.5rem] rounded-[0.5rem] justify-between items-center gap-3 text-white font-semibold lg:mt-auto mx-auto px-[1rem]">
-                    <div className="flex gap-[1rem] items-center">
+                  <button className="flex bg-[#25D366] shadow-[0px_16px_40px_-16px_rgba(0,155,75,0.56)] lg:w-fit w-full h-[3.5rem] rounded-[0.5rem] justify-between items-center gap-3 text-[#0B112E] font-bold lg:mt-auto mx-auto px-[1rem]">
+                    <div className="flex gap-[.5rem] items-center">
                       <Image src={zap} alt="zap" />
-                      <p className="text-left lg:text-base text-[0.875rem]">
+                      <p className={`${roboto.className} text-left lg:text-[1.125rem]`}>
                         Entrar no grupo do Whatsapp
                       </p>
                     </div>
@@ -184,13 +193,12 @@ function Content({ activeAula }: Props) {
                       target="_blank"
                       className=" w-full lg:mx-0 mx-auto mt-[2rem]"
                     >
-                      <button className="flex bg-[#2A2A2A]  w-full h-[3.5rem] rounded-[0.5rem] justify-between items-center gap-3 text-white font-semibold lg:mt-auto mx-auto px-[1rem]">
-                        <div className="flex gap-[1rem] items-center">
-                          <p className="text-left lg:text-base text-[0.875rem]">
-                            Baixar o material usado nessa aula
-                          </p>
-                        </div>
-                        <Image src={icondownload} alt="icondownload" />
+                      <button className="flex lg:flex-row flex-row-reverse bg-[#FFD52F]  w-full h-[3.5rem] rounded-[0.5rem] justify-between items-center lg:gap-3 text-[#0B112E] font-bold lg:mt-auto mx-auto px-[1rem]">
+                        <Image className="lg:hidden" src={arrowRight} alt="arrowRight" />
+                        <p className={`${roboto.className} text-left lg:text-[1.125rem]`}>
+                          Baixar o material usado nessa aula
+                        </p>
+                        <Image className="w-[1.25rem]" src={icondownload} alt="icondownload" />
                       </button>
                     </a>
                   </div>
@@ -201,7 +209,7 @@ function Content({ activeAula }: Props) {
         </div>
         <div className="lg:px-0 px-4 w-full ">
           <div className="lg:p-[2rem] pb-[2.25rem] p-[1.5rem] bg-cronograma w-full lg:rounded-none lg:rounded-r-[1rem] rounded-[1rem] lg:h-[27rem] lg:mt-0 mt-[2rem]">
-            <h1 className={`${SairaCondensed.className} text-center lg:text-[2rem] text-[1.25rem] font-bold text-[#0B112E] uppercase`}>
+            <h1 className={`${SairaCondensed.className} text-center lg:text-[2rem] text-[1.875rem] font-bold text-[#0B112E] uppercase lg:tracking-normal -tracking-[0.01875rem]`}>
               Cronograma de aulas
             </h1>
             <div className="mt-[1.25rem] flex flex-col gap-[1.16rem]">
@@ -222,10 +230,8 @@ function Content({ activeAula }: Props) {
       </div>
       <div className="max-w-[76rem] w-full mx-auto lg:px-0 px-4">
         <div className="h-[2px] w-full lg:mt-[5rem] mt-[2.5rem] bg-[#2A2A2A]"></div>
-        <h1 className="lg:mt-[4.5rem] mt-[2.5rem] lg:text-[2rem] text-[1.75rem] font-bold text-center text-[#fff]">
-          <span className="text-[#FEE296] lg:inline-block hidden">・</span>
-          Deixe aqui o principal insight que você teve durante a aula
-          <span className="text-[#FEE296] lg:inline-block hidden">・</span>
+        <h1 className={`${SairaCondensed.className} lg:mt-[4.5rem] mt-[2.5rem] lg:text-[3rem] text-[1.75rem] font-bold text-center text-[#fff] uppercase `}>
+          Deixe aqui o <span className="text-[#46CCEE]">principal insight</span> que você teve durante a aula
         </h1>
 
         <div className="max-w-[50rem] mx-auto bg-[#d8d7d7] rounded-lg lg:px-0">
@@ -236,14 +242,14 @@ function Content({ activeAula }: Props) {
         <Footer blue />
       </div>
 
-      {/* <div className="items-center justify-center fixed right-0 lg:bottom-10 bottom-0 flex bg-top-conf px-[1.5rem] py-[1rem] lg:rounded-l-[1rem] gap-[1.44rem] lg:w-[24.25rem] w-full z-50">
+      <div className="items-center justify-center fixed right-0 lg:bottom-10 bottom-0 flex bg-top-conf px-[1.5rem] py-[1rem] lg:rounded-l-[1rem] gap-[1.44rem] lg:max-w-[22.0625rem] w-full z-50 ">
         <p className="text-[0.75rem] font-bold">
-          AULA 02 <br /> LIBERADA EM:
+          AULA 01 <br /> LIBERADA EM:
         </p>
         <div>
           <CountDown />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
